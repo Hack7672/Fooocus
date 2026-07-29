@@ -41,11 +41,13 @@ evento → │ AccessibilityService / DeviceActivity → EventoUso          │
 | 1. Neurofeedback óptico (Pro) | pendente | casca nativa (câmera) + `Direitos.neurofeedback_optico` |
 | 2. Escala ZERO, redes específicas | **implementado** | `core/escala_zero.py` |
 | 2. Modo Foco Profundo, Texto Inútil | pendente | casca (bloqueio de apps, overlay de renderização) |
-| 3. Termômetro emocional, Dia Zero, Diário | pendente | serviço de NLP + `Direitos.dias_zero_por_mes` |
+| 3. Termômetro emocional, Dia Zero, Diário | **implementado** (triagem lexical; NLP real na Fase 3) | `core/recalibragem.py` |
 | 4. Scroll Stopper, Banco de Minutos, Leilão | **implementado** | `core/economia_atencao.py` |
-| 5. Jornada do Herói, Avatar do Eu Futuro | parcial | gatilho em `motor._intervencao_critica`; geração visual pendente |
-| 6. Tribos, Mentoria Reversa, Feed Maiêutico | pendente | backend social + `Direitos.tribos_simultaneas` |
-| 7. Missões offline, detox sensorial, Feed Nutritivo | parcial | `motor.concluir_missao_offline`; geolocalização pendente |
+| 5. Jornada do Herói, Simulador de Perda | **implementado** (regras); geração visual do Avatar pendente | `core/jornada.py`, gatilho em `motor._intervencao_critica` |
+| 6. Tribos, Feed Maiêutico | **implementado** (regras); transporte/backend social pendente | `core/social.py` |
+| 6. Mentoria Reversa | pendente (exige verificação de identidade — Fase 4) | — |
+| 7. Missões offline, detox, Feed Nutritivo | **implementado** (regras); geolocalização e áudio na casca | `core/protocolo_realidade.py` |
+| Persistência do estado do motor | **implementado** | `core/persistencia.py` |
 
 ## 3. Contrato de dados
 
@@ -123,7 +125,7 @@ notificações compulsivas.
 
 ## 7. Testes como especificação
 
-`mente_zero/tests/` contém 60 testes que fixam o comportamento esperado de cada
+`mente_zero/tests/` contém 100 testes que fixam o comportamento esperado de cada
 regra numérica do documento-mestre (2 minutos, 15 segundos, 25 minutos, 4 e 6
 moedas, 5 minutos com preço exponencial). Uma reimplementação em Kotlin ou Swift
 deve reproduzir esses casos para ser considerada equivalente.

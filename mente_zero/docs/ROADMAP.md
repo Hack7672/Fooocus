@@ -6,7 +6,12 @@ por **dependência técnica e risco de plataforma**, não por apelo narrativo.
 ## Fase 0 — Núcleo (concluída)
 
 Motor determinístico do IVD, Scroll Stopper, Banco de Minutos, Leilão de
-Distrações, Escala ZERO e matriz de planos, com 60 testes.
+Distrações, Escala ZERO e matriz de planos. Também já implementadas as regras
+puras das camadas 3 (termômetro lexical, Dia Zero, Diário), 5 (Jornada do
+Herói, Simulador de Perda), 6 (Tribos de Silêncio, Feed Maiêutico) e 7
+(missões, detox, Feed Nutritivo), além da persistência do estado do motor —
+100 testes no total. O que resta nas fases abaixo é integração de plataforma,
+IA e backend.
 
 ## Fase 1 — Casca móvel mínima (o produto que já muda comportamento)
 

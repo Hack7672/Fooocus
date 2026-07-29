@@ -20,6 +20,7 @@ from .escala_zero import (
     TipoIndisponivel,
 )
 from .ivd import CalculadoraIVD, LeituraIVD, ivd_de_serie, nivel_para
+from .jornada import JornadaDoHeroi, SimulacaoPerda, simular_perda
 from .models import (
     CategoriaApp,
     EventoUso,
@@ -30,14 +31,32 @@ from .models import (
     TipoIntervencao,
 )
 from .motor import MotorMenteZero, Resumo
+from .persistencia import carregar, salvar
 from .planos import Direitos, direitos
+from .protocolo_realidade import FeedNutritivo, ProtocoloRealidade, cronograma_detox
+from .recalibragem import (
+    DiarioMenteRestaurada,
+    DiaZero,
+    TermometroEmocional,
+)
+from .social import FeedMaieutico, GerenciadorTribos, TriboDeSilencio
 
 __all__ = [
     "BancoDeMinutos",
     "CalculadoraIVD",
     "CategoriaApp",
+    "DiaZero",
+    "DiarioMenteRestaurada",
     "Direitos",
     "EscalaZero",
+    "FeedMaieutico",
+    "FeedNutritivo",
+    "GerenciadorTribos",
+    "JornadaDoHeroi",
+    "ProtocoloRealidade",
+    "SimulacaoPerda",
+    "TermometroEmocional",
+    "TriboDeSilencio",
     "EstadoStopper",
     "EventoUso",
     "Exercicio",
@@ -55,7 +74,11 @@ __all__ = [
     "TipoExercicio",
     "TipoIndisponivel",
     "TipoIntervencao",
+    "carregar",
+    "cronograma_detox",
     "direitos",
     "ivd_de_serie",
     "nivel_para",
+    "salvar",
+    "simular_perda",
 ]

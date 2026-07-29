@@ -21,9 +21,12 @@ sem I/O e sem rede.
 | --- | --- |
 | 1 — Detecção | Índice de Vício Digital (5 sinais, média móvel exponencial, faixas de risco) |
 | 2 — Academia do Córtex | Escala ZERO: 6 tipos de exercício adaptativos, microganhos, repetição mínima |
+| 3 — Recalibragem emocional | Termômetro (triagem lexical com encaminhamento em crise), Dia Zero, Diário da Mente Restaurada |
 | 4 — Economia da atenção | Scroll Stopper, tela cinza, janela de reflexão, Banco de Minutos, Leilão de Distrações |
-| 5 — Identidade | Gatilho da mensagem do Eu Futuro na iminência de recaída |
-| — | Matriz de direitos FREE/PRO em um único lugar |
+| 5 — Identidade | Jornada do Herói (7 capítulos), Simulador de Perda simbólico, gatilho do Eu Futuro |
+| 6 — Social não tóxico | Tribos de Silêncio (12 pessoas, sem API de chat), Feed de Perguntas Maiêuticas |
+| 7 — Protocolo Realidade | Missões offline rotativas, cronograma de detox sensorial, Feed Nutritivo |
+| — | Matriz de direitos FREE/PRO em um único lugar; persistência completa do estado do motor |
 
 ## Uso
 
@@ -55,7 +58,7 @@ motor.responder_exercicio(exercicio, exercicio.resposta, tempo_s=12.0)
 ## Rodando
 
 ```bash
-# 60 testes, ~0,04 s
+# 100 testes, ~0,05 s
 python3 -m unittest discover -s mente_zero/tests -t .
 
 # simulação de um dia de uso (manhã compulsiva, trabalho, recaída de madrugada)
