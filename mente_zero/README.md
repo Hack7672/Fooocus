@@ -20,13 +20,13 @@ sem I/O e sem rede.
 | Camada | Implementado |
 | --- | --- |
 | 1 — Detecção | Índice de Vício Digital (5 sinais, média móvel exponencial, faixas de risco) |
-| 2 — Academia do Córtex | Escala ZERO: 6 tipos de exercício adaptativos, microganhos, repetição mínima |
+| 2 — Academia do Córtex | Escala ZERO: 6 tipos de exercício adaptativos, microganhos, repetição mínima; Modo Foco Profundo (45 min, multi-dispositivo no PRO) e Desafio do Texto Inútil |
 | 3 — Recalibragem emocional | Termômetro (triagem lexical com encaminhamento em crise), Dia Zero, Diário da Mente Restaurada |
 | 4 — Economia da atenção | Scroll Stopper, tela cinza, janela de reflexão, Banco de Minutos, Leilão de Distrações |
 | 5 — Identidade | Jornada do Herói (7 capítulos), Simulador de Perda simbólico, gatilho do Eu Futuro |
 | 6 — Social não tóxico | Tribos de Silêncio (12 pessoas, sem API de chat), Feed de Perguntas Maiêuticas |
 | 7 — Protocolo Realidade | Missões offline rotativas, cronograma de detox sensorial, Feed Nutritivo |
-| — | Matriz de direitos FREE/PRO em um único lugar; persistência completa do estado do motor |
+| — | Matriz de direitos FREE/PRO em um único lugar; persistência completa do estado do motor; relatório semanal de saúde digital |
 
 ## Uso
 
@@ -58,12 +58,15 @@ motor.responder_exercicio(exercicio, exercicio.resposta, tempo_s=12.0)
 ## Rodando
 
 ```bash
-# 100 testes, ~0,05 s
+# 121 testes, ~0,6 s
 python3 -m unittest discover -s mente_zero/tests -t .
 
 # simulação de um dia de uso (manhã compulsiva, trabalho, recaída de madrugada)
 python3 -m mente_zero.simulacao
 python3 -m mente_zero.simulacao --pro
+
+# protótipo navegável (stdlib pura) em http://127.0.0.1:8788
+python3 -m mente_zero.webapp --pro
 ```
 
 O núcleo não coleta conteúdo de tela: só geometria de gesto, categoria de app e

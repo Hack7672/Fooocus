@@ -19,6 +19,7 @@ from .escala_zero import (
     Resultado,
     TipoIndisponivel,
 )
+from .foco import DesafioTextoInutil, FocoProfundo
 from .ivd import CalculadoraIVD, LeituraIVD, ivd_de_serie, nivel_para
 from .jornada import JornadaDoHeroi, SimulacaoPerda, simular_perda
 from .models import (
@@ -34,6 +35,7 @@ from .motor import MotorMenteZero, Resumo
 from .persistencia import carregar, salvar
 from .planos import Direitos, direitos
 from .protocolo_realidade import FeedNutritivo, ProtocoloRealidade, cronograma_detox
+from .relatorio import RelatorioSemanal, ResumoDiario, gerar_relatorio
 from .recalibragem import (
     DiarioMenteRestaurada,
     DiaZero,
@@ -45,15 +47,19 @@ __all__ = [
     "BancoDeMinutos",
     "CalculadoraIVD",
     "CategoriaApp",
+    "DesafioTextoInutil",
     "DiaZero",
     "DiarioMenteRestaurada",
     "Direitos",
     "EscalaZero",
     "FeedMaieutico",
     "FeedNutritivo",
+    "FocoProfundo",
     "GerenciadorTribos",
     "JornadaDoHeroi",
     "ProtocoloRealidade",
+    "RelatorioSemanal",
+    "ResumoDiario",
     "SimulacaoPerda",
     "TermometroEmocional",
     "TriboDeSilencio",
@@ -77,6 +83,7 @@ __all__ = [
     "carregar",
     "cronograma_detox",
     "direitos",
+    "gerar_relatorio",
     "ivd_de_serie",
     "nivel_para",
     "salvar",
