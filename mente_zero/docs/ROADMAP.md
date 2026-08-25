@@ -39,8 +39,10 @@ Mitigar cedo, com build de revisão antes de investir nas camadas 5-7.
 
 ## Fase 3 — PRO e inteligência
 
-- IA Coach de atenção: modelo de previsão de recaída treinado sobre a série de
-  IVD do próprio usuário (no dispositivo).
+- IA Coach de atenção: **primeira versão implementada** (`core/coach.py`) —
+  perfil temporal de risco por dia × hora com previsão e aviso preventivo;
+  a evolução da fase troca a estatística simples por modelo aprendido,
+  mantendo o contrato.
 - Escala ZERO gerada por IA generativa, com validação automática de gabarito
   antes de mostrar ao usuário — item sem resposta verificável não é publicado.
 - Neurofeedback óptico (consentimento explícito, processamento local).

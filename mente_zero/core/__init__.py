@@ -19,6 +19,13 @@ from .escala_zero import (
     Resultado,
     TipoIndisponivel,
 )
+from .coach import CoachAtencao
+from .desintoxicacao import (
+    ProgramaDesintoxicacao,
+    Severidade,
+    iniciar_programa,
+    triagem,
+)
 from .foco import DesafioTextoInutil, FocoProfundo
 from .ivd import CalculadoraIVD, LeituraIVD, ivd_de_serie, nivel_para
 from .jornada import JornadaDoHeroi, SimulacaoPerda, simular_perda
@@ -47,6 +54,7 @@ __all__ = [
     "BancoDeMinutos",
     "CalculadoraIVD",
     "CategoriaApp",
+    "CoachAtencao",
     "DesafioTextoInutil",
     "DiaZero",
     "DiarioMenteRestaurada",
@@ -57,9 +65,11 @@ __all__ = [
     "FocoProfundo",
     "GerenciadorTribos",
     "JornadaDoHeroi",
+    "ProgramaDesintoxicacao",
     "ProtocoloRealidade",
     "RelatorioSemanal",
     "ResumoDiario",
+    "Severidade",
     "SimulacaoPerda",
     "TermometroEmocional",
     "TriboDeSilencio",
@@ -84,8 +94,10 @@ __all__ = [
     "cronograma_detox",
     "direitos",
     "gerar_relatorio",
+    "iniciar_programa",
     "ivd_de_serie",
     "nivel_para",
+    "triagem",
     "salvar",
     "simular_perda",
 ]

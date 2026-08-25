@@ -27,6 +27,8 @@ sem I/O e sem rede.
 | 6 — Social não tóxico | Tribos de Silêncio (12 pessoas, sem API de chat), Feed de Perguntas Maiêuticas |
 | 7 — Protocolo Realidade | Missões offline rotativas, cronograma de detox sensorial, Feed Nutritivo |
 | — | Matriz de direitos FREE/PRO em um único lugar; persistência completa do estado do motor; relatório semanal de saúde digital |
+| Coach (PRO) | IA Coach de atenção: perfil temporal de risco por dia × hora e aviso preventivo antes da janela de recaída |
+| Desintoxicação (FREE) | Triagem de severidade (8 itens), protocolo de redução gradual (4-8 semanas), lapso sem culpa e marcos de soberania (7/30/90 dias) |
 
 ## Uso
 
@@ -58,7 +60,7 @@ motor.responder_exercicio(exercicio, exercicio.resposta, tempo_s=12.0)
 ## Rodando
 
 ```bash
-# 121 testes, ~0,6 s
+# 142 testes, ~0,6 s
 python3 -m unittest discover -s mente_zero/tests -t .
 
 # simulação de um dia de uso (manhã compulsiva, trabalho, recaída de madrugada)

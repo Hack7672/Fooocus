@@ -42,6 +42,8 @@ evento → │ AccessibilityService / DeviceActivity → EventoUso          │
 | 2. Escala ZERO, redes específicas | **implementado** | `core/escala_zero.py` |
 | 2. Modo Foco Profundo, Texto Inútil | **implementado** (regras); overlay e bloqueio reais na casca | `core/foco.py` |
 | Relatório semanal de saúde digital | **implementado** | `core/relatorio.py` |
+| IA Coach de atenção (Pro, Fase 3) | **implementado** (estatística temporal auditável; modelo mais rico substitui o interior) | `core/coach.py` |
+| Programa de Desintoxicação Digital | **implementado** (triagem, redução gradual, lapso sem culpa, marcos) | `core/desintoxicacao.py` |
 | 3. Termômetro emocional, Dia Zero, Diário | **implementado** (triagem lexical; NLP real na Fase 3) | `core/recalibragem.py` |
 | 4. Scroll Stopper, Banco de Minutos, Leilão | **implementado** | `core/economia_atencao.py` |
 | 5. Jornada do Herói, Simulador de Perda | **implementado** (regras); geração visual do Avatar pendente | `core/jornada.py`, gatilho em `motor._intervencao_critica` |
@@ -126,7 +128,7 @@ notificações compulsivas.
 
 ## 7. Testes como especificação
 
-`mente_zero/tests/` contém 121 testes que fixam o comportamento esperado de cada
+`mente_zero/tests/` contém 142 testes que fixam o comportamento esperado de cada
 regra numérica do documento-mestre (2 minutos, 15 segundos, 25 minutos, 4 e 6
 moedas, 5 minutos com preço exponencial). Uma reimplementação em Kotlin ou Swift
 deve reproduzir esses casos para ser considerada equivalente.
